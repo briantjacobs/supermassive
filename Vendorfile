@@ -1,0 +1,29 @@
+# file 'vendor/assets/javascripts/jquery.min.js', 'http://code.jquery.com/jquery-latest.min.js'
+# folder 'vendor/plugins/parallel_tests', 'https://github.com/grosser/parallel_tests.git'
+
+# Execute a block after updates
+# file 'vendor/assets/javascripts/jquery.js', 'http://code.jquery.com/jquery.js' do |path|
+#   puts "Do something useful with #{path}"
+#   rewrite(path) { |content| content.gsub(/\r\n/, \n).gsub /\t/, ' ' }
+# end
+
+# Checkout a specific :ref/:tag/:branch
+# folder 'vendor/plugins/parallel_tests', 'https://github.com/grosser/parallel_tests.git', :tag => 'v0.6.10'
+
+# DRY folders
+# folder 'vendor/assets/javascripts' do
+#   file 'jquery.js', 'http://code.jquery.com/jquery-latest.js'
+# end
+
+# Copy files & folders from repos (also works with private repos)
+# from 'https://github.com/grosser/parallel_tests.git' do |checkout_location|
+#   file 'Readme.md'
+#   file 'target-folder/file.rb', 'lib/parallel_tests.rb'
+#   folder 'spec'
+#   folder 'renamed-folder', 'spec'
+# end
+
+
+file 'vendor/assets/javascripts/threejs/three.js', 'https://raw.github.com/mrdoob/three.js/master/build/three.js'
+file 'vendor/assets/javascripts/threejs/OrbitControls.js', 'https://raw.github.com/mrdoob/three.js/master/examples/js/controls/OrbitControls.js'
+file 'vendor/assets/javascripts/threejs/Stats.js', 'https://raw.github.com/mrdoob/stats.js/master/src/Stats.js'
